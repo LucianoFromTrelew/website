@@ -46,7 +46,7 @@ export function ArticleLayout({ note, site, body, links }: ArticlePageProps) {
           <p>Links on this note↗</p>
 
           <ul>
-            {links.map((link) => {
+            {links.map(link => {
               const isInternal = link.kind === "internal";
               return (
                 <li className={clsx({ [styles.internal]: isInternal })}>
